@@ -1,2 +1,2 @@
-# mealapp
+# Sample Meal Application
  
