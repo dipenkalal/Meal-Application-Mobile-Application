@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:mealapp/category_meal_screen.dart';
 import './category_screen.dart';
 
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,7 +19,12 @@ class MyApp extends StatelessWidget {
           subtitle1: const TextStyle(fontSize: 20, fontFamily: 'Lato', fontWeight: FontWeight.w300)
         )
       ),
-      home: const CategoryScreen(),
+      // home: const ,
+      initialRoute: '/', //default loading path
+      routes: {
+          '/' : (ctx) => CategoryScreen(),
+          CategoryMealScreen.routeName: (ctx) => CategoryMealScreen(),
+      },
     );
   }
 }
