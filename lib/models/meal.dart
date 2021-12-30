@@ -19,7 +19,7 @@ class Meal {
   final String title;
   final String imageUrl;
   final List<String> ingredients;
-  final List<String> steps;
+  final List<String> Instructions;
   final int duration;
   final Complexity complexity;
   final Affordability affordability;
@@ -34,7 +34,7 @@ class Meal {
       required this.title,
       required this.imageUrl,
       required this.ingredients,
-      required this.steps,
+      required this.Instructions,
       required this.duration,
       required this.complexity,
       required this.affordability,

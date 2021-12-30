@@ -10,6 +10,9 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
+//    apply plugin: 'com.android.application'
+//    apply plugin: 'kotlin-android'
+//    apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 allprojects {
     repositories {
