@@ -35,12 +35,12 @@ class mealitem extends StatelessWidget {
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(15),
                       topRight: Radius.circular(15)),
-                  child: Image.network(
+                  child:InkWell(child: Image.network(
                     imageUrl,
                     height: 250,
                     width: double.infinity,
                     fit: BoxFit.cover,
-                  ),
+                  ),)
                 )
               ],
             )

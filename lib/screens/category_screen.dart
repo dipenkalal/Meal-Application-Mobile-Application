@@ -14,15 +14,22 @@ class CategoryScreen extends StatelessWidget {
           ),
         ),
         body: GridView(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(18),
           gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
               maxCrossAxisExtent: 200,
               childAspectRatio: 3 / 2,
               mainAxisSpacing: 20,
               crossAxisSpacing: 20),
-          children: Dummy_Category
-              .map((catData) =>
-                  CategoryItem(catData.id, catData.title, catData.color))
+          children: dummyCategory
+              .map((catData) => Card(
+            clipBehavior: Clip.antiAlias,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15)
+                ),
+                elevation: 10,
+                  child: Container(
+                      child: CategoryItem(
+                          catData.id, catData.title, catData.color))))
               .toList(),
         ));
   }
