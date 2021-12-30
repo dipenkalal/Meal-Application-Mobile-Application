@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:mealapp/screens/category_meal_screen.dart';
 import './screens/category_screen.dart';
 
-void main() => runApp(MyApp());
+Future<void> main() async {
+  runApp(MyApp());
+}
 class MyApp extends StatelessWidget {
 
   @override
