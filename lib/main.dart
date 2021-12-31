@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mealapp/screens/category_meal_screen.dart';
-import 'package:mealapp/screens/meal_detail.dart';
+import 'package:mealapp/screens/meal_detail_screen.dart';
 import './screens/category_screen.dart';
 
 Future<void> main() async {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../screens/meal_detail.dart';
+import '../screens/meal_detail_screen.dart';
 import '../models/meal.dart';
 
 class mealitem extends StatelessWidget {
