@@ -3,7 +3,6 @@ import 'package:mealapp/dummy_data.dart';
 import '../widgets/category_item.dart';
 
 class CategoryScreen extends StatelessWidget {
-  const CategoryScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,11 +14,6 @@ class CategoryScreen extends StatelessWidget {
         ),
         body: GridView(
           padding: const EdgeInsets.all(18),
-          gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-              maxCrossAxisExtent: 200,
-              childAspectRatio: 3 / 2,
-              mainAxisSpacing: 20,
-              crossAxisSpacing: 20),
           children: dummyCategory
               .map((catData) => Card(
             clipBehavior: Clip.antiAlias,
@@ -31,6 +25,11 @@ class CategoryScreen extends StatelessWidget {
                       child: CategoryItem(
                           catData.id, catData.title, catData.color))))
               .toList(),
+            gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                  maxCrossAxisExtent: 200,
+                  childAspectRatio: 3 / 2,
+                  mainAxisSpacing: 20,
+                  crossAxisSpacing: 20),
         ));
   }
 }

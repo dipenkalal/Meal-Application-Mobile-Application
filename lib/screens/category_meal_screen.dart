@@ -4,10 +4,6 @@ import 'package:mealapp/widgets/meal_item.dart';
 
 class CategoryMealScreen extends StatelessWidget {
   static const routeName = '/category-meals';
-  // final String categoryId;
-  // final String categoryTitle;
-  //
-  // CategoryMealScreen(this.categoryId,this.categoryTitle);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +25,9 @@ class CategoryMealScreen extends StatelessWidget {
                 complexity: categoryMeal[index].complexity,
                 title: categoryMeal[index].title,
                 duration: categoryMeal[index].duration,
-                imageUrl: categoryMeal[index].imageUrl);
+                imageUrl: categoryMeal[index].imageUrl,
+                id: categoryMeal[index].id,
+            );
           },
           itemCount: categoryMeal.length,
         ));

@@ -77,7 +77,7 @@ const dummyMeals = [
       '▢ 2 1/2 cups gruyere cheese (or mozzarella) , freshly grated yourself (Note 3)',
       ' ▢ 2 tsp thyme leaves , fresh (optional – but highly recommended)',
     ],
-    Instructions: [
+    instructions: [
       ' Cream Mixture: Place butter, cream and garlic in a jug. Mix until combined.',
       'Preheat oven to 180°C/350°F.',
       'Slice potatoes: Peel the potatoes and slice them 1/8"/3 mm thick. Or use a slicer!',
@@ -121,7 +121,7 @@ const dummyMeals = [
       '▢ 1 garlic clove , minced',
       '▢ 3/4 cup grated cheese (tasty, cheddar or gruyere)'
     ],
-    Instructions: [
+    instructions: [
       'Preheat oven to 425F/220C with the oven shelf in the top 1/3 of the oven.',
       'Grease a 9"/ 23cm pie dish (Note 2)',
       '\n\nHash Brown Crust',
@@ -176,7 +176,7 @@ const dummyMeals = [
       'Butter – buttering the bread before cooking creates that crunchy, golden-brown texture and color.',
       'Eggs – fried to perfection to finish off the sandwich.',
     ],
-    Instructions: [
+    instructions: [
       'Use a whisk to mix the ingredients for your béchamel sauce in a saucepan.',
       'Cut the brioche and layer a slice with cheese, ham, and sauce. Top it off with another brioche slice.',
       'Cook in a large nonstick pan. Remove and place on a baking sheet lined with a silicone mat.',
@@ -213,7 +213,7 @@ const dummyMeals = [
       '\nfor the egg wash',
       '1 egg, beaten',
     ],
-    Instructions: [
+    instructions: [
       '\n\nPart 1 - Create Your Dough',
       'In a large bowl, combine all of the dough ingredients together, including the flour, cold water, cold milk, granulated sugar, unsalted butter, yeast, and table salt. Mix everything together with a wooden spoon; then knead for a couple of minutes into a smooth ball.',
       'Lightly flour a baking pan before transferring your dough ball into the pan. Lightly dust the top of the dough with flour before covering with plastic wrap. Refrigerate overnight (or at least 8 hours). ',
@@ -265,7 +265,7 @@ const dummyMeals = [
       'Salt',
       '50 gms wheat starch',
     ],
-    Instructions: [
+    instructions: [
       'Mince chicken and prawns and mix with sugar, salt, sesame oil and potato starch. Stuff the mixture in the wanton skin and steam.\n Serve with Diamond & soya Sauce',
       'Mix all ingredients except for wanton skin. Stuff the mixture in the wanton skin and steam. \n Serve with diamond sauce.',
       'Add cold water with potato and 50 gm of wheat starch, and mix with a pinch of salt.',
@@ -305,7 +305,7 @@ const dummyMeals = [
       '2 tbsp Corn flour',
       '1 tsp Stock',
     ],
-    Instructions: [
+    instructions: [
       'In a hot pan add a dash of olive oil in which you can add the spring onions, green bell peppers and ginger.',
       'Give it a good toss.',
       'Add balsamic vinegar to deglaze and put in another bowl.',
@@ -360,7 +360,7 @@ const dummyMeals = [
       'Salt',
       '50 gms wheat starch',
     ],
-    Instructions: [
+    instructions: [
       'Mince chicken and prawns and mix with sugar, salt, sesame oil and potato starch. Stuff the mixture in the wanton skin and steam.\n Serve with Diamond & soya Sauce',
       'Mix all ingredients except for wanton skin. Stuff the mixture in the wanton skin and steam. \n Serve with diamond sauce.',
       'Add cold water with potato and 50 gm of wheat starch, and mix with a pinch of salt.',
@@ -400,7 +400,7 @@ const dummyMeals = [
       '2 tbsp Corn flour',
       '1 tsp Stock',
     ],
-    Instructions: [
+    instructions: [
       'In a hot pan add a dash of olive oil in which you can add the spring onions, green bell peppers and ginger.',
       'Give it a good toss.',
       'Add balsamic vinegar to deglaze and put in another bowl.',
@@ -438,7 +438,7 @@ const dummyMeals = [
       '1 avocado sliced',
       'soy sauce for serving',
     ],
-    Instructions: [
+    instructions: [
       'Place the seaweed on a bamboo mat, then cover the sheet of seaweed with an even layer of prepared sushi rice. Smooth gently with the rice paddle.',
       'Layer salmon, cream cheese, and avocado on the rice, and roll it up tightly. Slice with a sharp knife, and enjoy with soy sauce.',
     ],
@@ -474,7 +474,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -512,7 +512,7 @@ const dummyMeals = [
       '1 avocado sliced',
       'soy sauce for serving',
     ],
-    Instructions: [
+    instructions: [
       'Place the seaweed on a bamboo mat, then cover the sheet of seaweed with an even layer of prepared sushi rice. Smooth gently with the rice paddle.',
       'Layer salmon, cream cheese, and avocado on the rice, and roll it up tightly. Slice with a sharp knife, and enjoy with soy sauce.',
     ],
@@ -548,7 +548,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -586,7 +586,7 @@ const dummyMeals = [
       '1 avocado sliced',
       'soy sauce for serving',
     ],
-    Instructions: [
+    instructions: [
       'Place the seaweed on a bamboo mat, then cover the sheet of seaweed with an even layer of prepared sushi rice. Smooth gently with the rice paddle.',
       'Layer salmon, cream cheese, and avocado on the rice, and roll it up tightly. Slice with a sharp knife, and enjoy with soy sauce.',
     ],
@@ -622,7 +622,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -660,7 +660,7 @@ const dummyMeals = [
       '1 avocado sliced',
       'soy sauce for serving',
     ],
-    Instructions: [
+    instructions: [
       'Place the seaweed on a bamboo mat, then cover the sheet of seaweed with an even layer of prepared sushi rice. Smooth gently with the rice paddle.',
       'Layer salmon, cream cheese, and avocado on the rice, and roll it up tightly. Slice with a sharp knife, and enjoy with soy sauce.',
     ],
@@ -696,7 +696,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -734,7 +734,7 @@ const dummyMeals = [
       '1 avocado sliced',
       'soy sauce for serving',
     ],
-    Instructions: [
+    instructions: [
       'Place the seaweed on a bamboo mat, then cover the sheet of seaweed with an even layer of prepared sushi rice. Smooth gently with the rice paddle.',
       'Layer salmon, cream cheese, and avocado on the rice, and roll it up tightly. Slice with a sharp knife, and enjoy with soy sauce.',
     ],
@@ -770,7 +770,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -808,7 +808,7 @@ const dummyMeals = [
       '1 avocado sliced',
       'soy sauce for serving',
     ],
-    Instructions: [
+    instructions: [
       'Place the seaweed on a bamboo mat, then cover the sheet of seaweed with an even layer of prepared sushi rice. Smooth gently with the rice paddle.',
       'Layer salmon, cream cheese, and avocado on the rice, and roll it up tightly. Slice with a sharp knife, and enjoy with soy sauce.',
     ],
@@ -844,7 +844,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -890,7 +890,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -936,7 +936,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -982,7 +982,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1028,7 +1028,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1074,7 +1074,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1120,7 +1120,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1166,7 +1166,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1212,7 +1212,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1258,7 +1258,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1304,7 +1304,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1350,7 +1350,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1396,7 +1396,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1442,7 +1442,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1488,7 +1488,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1534,7 +1534,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1580,7 +1580,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1626,7 +1626,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1672,7 +1672,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1718,7 +1718,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',
@@ -1764,7 +1764,7 @@ const dummyMeals = [
       '▢ 2 tablspoons vegetable oil',
       '▢ 1 teaspoon sesame seeds',
     ],
-    Instructions: [
+    instructions: [
       'In a medium-size pot whisk together soy sauce, water, mirin, rice vinegar, sugar, ginger, garlic, and cornstarch.',
       'Bring mixture to a boil, constantly whisk until sauce is slightly thickened, about 1 minute.',
       'Transfer 1 cup of the sauce to a bowl to use for basting the chicken.',

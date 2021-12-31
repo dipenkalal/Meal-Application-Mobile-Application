@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import '../screens/meal_detail.dart';
 import '../models/meal.dart';
 
 class mealitem extends StatelessWidget {
+  final String id;
   final String title;
   final String imageUrl;
   final int duration;
@@ -9,23 +11,21 @@ class mealitem extends StatelessWidget {
   final Affordability affordability;
 
   mealitem(
-      {required this.affordability,
+      {required this.id,
+        required this.affordability,
       required this.complexity,
       required this.title,
       required this.duration,
-      required this.imageUrl});
+      required this.imageUrl,});
 
   String get complexityText{
     switch(complexity){
       case Complexity.Simple:
         return 'Simple';
-        break;
       case Complexity.Challenging:
         return 'Challenging';
-        break;
       case Complexity.Hard:
         return 'Hard';
-        break;
       default :
         return "Unknown";
 
@@ -36,25 +36,24 @@ class mealitem extends StatelessWidget {
     switch(affordability){
       case Affordability.Affordable:
         return 'Affordable ';
-        break;
       case Affordability.LittleBitPricey:
         return 'LittleBitPricey';
-        break;
       case Affordability.Luxurious:
         return 'Luxurious';
-        break;
       default :
         return "Unknown";
 
     }
   }
 
-  void selectMeal() {}
+  void selectMeal(BuildContext context) {
+    Navigator.of(context).pushNamed(MealDetail.routeName, arguments: title);
+  }
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: selectMeal,
+      onTap: ()=> selectMeal(context),
       child: Card(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
@@ -80,8 +79,8 @@ class mealitem extends StatelessWidget {
                     bottom: 15,
                     left: 10,
                     child: Container(
-
-                      width: 200,
+//-------------------------------------------------------------------------------------------------------------------
+                      width: 180,
                       color: Colors.black45,
                       padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 10),
                       child: Text(title, style: const TextStyle(fontSize: 20, color: Colors.white,

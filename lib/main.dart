@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:mealapp/screens/category_meal_screen.dart';
+import 'package:mealapp/screens/meal_detail.dart';
 import './screens/category_screen.dart';
 
 Future<void> main() async {
   runApp(MyApp());
 }
 class MyApp extends StatelessWidget {
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -21,11 +24,13 @@ class MyApp extends StatelessWidget {
           subtitle1: const TextStyle(fontSize: 20, fontFamily: 'Lato', fontWeight: FontWeight.w300)
         )
       ),
+
       // home: const ,
       initialRoute: '/', //default loading path
       routes: {
           '/' : (ctx) => CategoryScreen(),
           CategoryMealScreen.routeName: (ctx) => CategoryMealScreen(),
+        MealDetail.routeName: (ctx) => MealDetail(),
       },
     );
   }
