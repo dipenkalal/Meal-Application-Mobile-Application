@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mealapp/dummy_data.dart';
 
@@ -9,7 +10,7 @@ class MealDetail extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(4),
       margin: const EdgeInsets.symmetric(vertical: 10),
-      child: Text(text, style: Theme.of(context).textTheme.subtitle1),
+      child: Text(text, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w400, fontStyle: FontStyle.normal)),
     );
   }
 
@@ -21,7 +22,7 @@ class MealDetail extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10)),
             margin: const EdgeInsets.all(10),
             padding: const EdgeInsets.all(10),
-            height:300,
+            height:350,
             width: 400,
             child: child);
   }
@@ -106,20 +107,31 @@ class MealDetail extends StatelessWidget {
             buildSectionTitle(context, 'Ingredients'),
             buildContainer(
               ListView.builder(
-                itemBuilder: (ctx, index) => Card(
-                  color: Theme.of(context).secondaryHeaderColor,
-                  child: Padding(
-                    padding:
-                        const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-                    child: Text(
-                      selectedMeal.ingredients[index].toString(),
-                      style: const TextStyle(fontSize: 15),
-                    ),
+                  itemBuilder: (ctx, index) => Column(
+                    children: [
+                      ListTile(
+                        leading: CircleAvatar(
+                          child: Text('${(index + 1)}'),
+                        ),
+                        title: Text(selectedMeal.ingredients[index].toString(),style: const TextStyle(fontSize: 14),),
+                      ),
+                      const Divider()
+                    ],
                   ),
+                  //     Card(
+                  //   color: Theme.of(context).secondaryHeaderColor,
+                  //   child: Padding(
+                  //     padding:
+                  //         const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                  //     child: Text(
+                  //       selectedMeal.ingredients[index].toString(),
+                  //       style: const TextStyle(fontSize: 15),
+                  //     ),
+                  //   ),
+                  // ),
+                  itemCount: selectedMeal.ingredients.length,
                 ),
-                itemCount: selectedMeal.ingredients.length,
               ),
-            ),
             buildSectionTitle(context, 'Steps'),
             buildContainer(
               ListView.builder(
