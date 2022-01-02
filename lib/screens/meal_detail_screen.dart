@@ -6,8 +6,8 @@ class MealDetail extends StatelessWidget {
 
   Widget buildSectionTitle(BuildContext context, String text) {
     return Container(
-      padding: EdgeInsets.all(4),
-      margin: EdgeInsets.symmetric(vertical: 10),
+      padding: const EdgeInsets.all(4),
+      margin: const EdgeInsets.symmetric(vertical: 10),
       child: Text(text, style: Theme.of(context).textTheme.subtitle1),
     );
   }
@@ -18,8 +18,8 @@ class MealDetail extends StatelessWidget {
             color: Colors.white60,
             border: Border.all(color: Colors.black12),
             borderRadius: BorderRadius.circular(10)),
-        margin: EdgeInsets.all(10),
-        padding: EdgeInsets.all(10),
+        margin: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         width: 400,
         child: child);
   }
@@ -111,7 +111,7 @@ class MealDetail extends StatelessWidget {
                         const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                     child: Text(
                       selectedMeal.ingredients[index].toString(),
-                      style: TextStyle(fontSize: 15),
+                      style: const TextStyle(fontSize: 15),
                     ),
                   ),
                 ),
@@ -127,9 +127,9 @@ class MealDetail extends StatelessWidget {
                       leading: CircleAvatar(
                         child: Text('#${(index + 1)}'),
                       ),
-                      title: Text(selectedMeal.instructions[index].toString(),style: TextStyle(fontSize: 15),),
+                      title: Text(selectedMeal.instructions[index].toString(),style: const TextStyle(fontSize: 15),),
                     ),
-                    Divider()
+                    const Divider()
                   ],
                 ),
                 itemCount: selectedMeal.instructions.length,
