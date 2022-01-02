@@ -9,7 +9,10 @@ class CategoryScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Meal App Dev Phase',
+            'Meal Application',
+            style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.w300),
           ),
         ),
         body: GridView(
@@ -21,9 +24,8 @@ class CategoryScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15)
                 ),
                 elevation: 10,
-                  child: Container(
-                      child: CategoryItem(
-                          catData.id, catData.title, catData.color))))
+                  child: CategoryItem(
+                      catData.id, catData.title, catData.color)))
               .toList(),
             gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                   maxCrossAxisExtent: 200,

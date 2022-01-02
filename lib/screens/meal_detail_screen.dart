@@ -4,6 +4,7 @@ import 'package:mealapp/dummy_data.dart';
 class MealDetail extends StatelessWidget {
   static const routeName = '/mealdetail';
 
+
   Widget buildSectionTitle(BuildContext context, String text) {
     return Container(
       padding: const EdgeInsets.all(4),
@@ -14,14 +15,15 @@ class MealDetail extends StatelessWidget {
 
   Widget buildContainer(Widget child) {
     return Container(
-        decoration: BoxDecoration(
-            color: Colors.white60,
-            border: Border.all(color: Colors.black12),
-            borderRadius: BorderRadius.circular(10)),
-        margin: const EdgeInsets.all(10),
-        padding: const EdgeInsets.all(10),
-        width: 400,
-        child: child);
+            decoration: BoxDecoration(
+                color: Colors.white60,
+                border: Border.all(color: Colors.black12),
+                borderRadius: BorderRadius.circular(10)),
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
+            height:300,
+            width: 400,
+            child: child);
   }
 
   @override

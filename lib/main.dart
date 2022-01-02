@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'DeliMeals',
+      title: 'Meal Application',
       theme: ThemeData(
-        canvasColor: const Color.fromRGBO(251, 250, 245, 1),
+        canvasColor: const Color.fromRGBO(250, 250, 250, 1),
         fontFamily: 'Lato',
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.teal).copyWith(secondary: Colors.amber),
         textTheme: ThemeData.light().textTheme.copyWith(
