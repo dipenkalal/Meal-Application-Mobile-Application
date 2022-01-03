@@ -76,8 +76,8 @@ class MainDrawer extends StatelessWidget {
           ),
             Column(
             children: <Widget>[
-              buildListTile('Meals', Icons.restaurant_menu,(){ Navigator.of(context).pushNamed('/');}),
-              buildListTile('Filters', Icons.settings,(){Navigator.of(context).pushNamed(FilterScreen.routeName);}),
+              buildListTile('Meals', Icons.restaurant_menu,(){ Navigator.of(context).pushReplacementNamed('/');}),
+              buildListTile('Filters', Icons.settings,(){Navigator.of(context).pushReplacementNamed(FilterScreen.routeName);}),
                 ]
             ),
             ],
