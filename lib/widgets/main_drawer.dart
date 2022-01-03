@@ -23,27 +23,53 @@ class MainDrawer extends StatelessWidget {
     return Drawer(
       child: Column(
         children: <Widget>[
-          Container(
-            height: 150,
-            width: double.infinity,
-            padding: const EdgeInsets.all(20),
-            alignment: Alignment.centerLeft,
-            color: Colors.blueGrey,
-            child: Text(
-              'Cooking Time?',
-              style: TextStyle(
-                  fontWeight: FontWeight.w700,
-                  fontSize: 35,
-                  color: Theme.of(context).primaryColorLight),
-            ),
+          Stack(
+            children: [
+              Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+
+                children: <Widget>[
+              ClipRRect(
+              borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(8.0),
+                topRight: Radius.circular(8.0),
+              ),
+              child: Image.asset('assets/images/nav-menu-header-bg.jpg',
+                  // width: 300,
+                  height: MediaQuery.of(context).size.height * 0.25,
+                  fit:BoxFit.cover
+              ),
+              ),
+
+                ],
+              ),
+              ),
+            ],
           ),
-          buildListTile('Meals', Icons.restaurant_menu),
-          const SizedBox(
-            height: 20,
-          ),
-          buildListTile('Filters', Icons.settings),
         ],
       ),
     );
   }
 }
+
+
+//   height: 150,
+//   width: double.infinity,
+//   padding: const EdgeInsets.all(20),
+//   alignment: Alignment.centerLeft,
+//
+// //   child: Text(
+// //     'Cooking Time?',
+// //     style: TextStyle(
+// //         fontWeight: FontWeight.w700,
+// //         fontSize: 35,
+// //           ),
+// //   ),
+// // ),
+// // buildListTile('Meals', Icons.restaurant_menu),
+// // const SizedBox(
+// //   height: 20,
+// // ),
+// // buildListTile('Filters', Icons.settings),
