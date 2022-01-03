@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:mealapp/dummy_data.dart';
 import 'package:mealapp/widgets/meal_item.dart';
@@ -13,6 +15,7 @@ class CategoryMealScreen extends StatefulWidget {
 class _CategoryMealScreenState extends State<CategoryMealScreen> {
   late String? categoryTitle;
   late List<Meal> categoryMeal;
+  var _loadedInitData = false;
 
 
   @override
@@ -22,13 +25,17 @@ class _CategoryMealScreenState extends State<CategoryMealScreen> {
   }
   @override
   void didChangeDependencies() {
-    final routeArgs =
-    ModalRoute.of(context)!.settings.arguments as Map<String, String>;
-    categoryTitle = routeArgs!['title'];
-    final categoryId = routeArgs['id'];
-    categoryMeal = dummyMeals.where((meal) {
-      return meal.categories.contains(categoryId);
-    }).toList();
+    if (!_loadedInitData){
+      final routeArgs =
+      ModalRoute.of(context)!.settings.arguments as Map<String, String>;
+      categoryTitle = routeArgs!['title'];
+      final categoryId = routeArgs['id'];
+      categoryMeal = dummyMeals.where((meal) {
+        return meal.categories.contains(categoryId);
+      }).toList();
+      _loadedInitData = true;
+    }
+
     super.didChangeDependencies();
   }
 
