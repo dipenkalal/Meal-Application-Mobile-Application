@@ -83,17 +83,6 @@ class MealDetail extends StatelessWidget {
                     ),
                   )),
             ]),
-            // SingleChildScrollView(
-            //   child: Column(
-            //     children: <Widget>[
-            //       Container(
-            //         height: 290,
-            //         width: double.infinity,
-            //         child: Image.network(
-            //           selectedMeal.imageUrl,
-            //           fit: BoxFit.cover,
-            //         ),
-            //       ),
             Container(
               margin:const EdgeInsets.symmetric(vertical: 15,horizontal: 15),
               child: Text(
@@ -118,17 +107,6 @@ class MealDetail extends StatelessWidget {
                       const Divider()
                     ],
                   ),
-                  //     Card(
-                  //   color: Theme.of(context).secondaryHeaderColor,
-                  //   child: Padding(
-                  //     padding:
-                  //         const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-                  //     child: Text(
-                  //       selectedMeal.ingredients[index].toString(),
-                  //       style: const TextStyle(fontSize: 15),
-                  //     ),
-                  //   ),
-                  // ),
                   itemCount: selectedMeal.ingredients.length,
                 ),
               ),
@@ -151,6 +129,12 @@ class MealDetail extends StatelessWidget {
             ),
           ]),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).pop(mealtitle);
+        },
+        child: Icon(Icons.delete_rounded,color: Theme.of(context).primaryColorLight,) ,
       ),
     );
   }
