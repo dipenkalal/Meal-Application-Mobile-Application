@@ -5,12 +5,27 @@ import 'package:mealapp/screens/meal_detail_screen.dart';
 import 'package:mealapp/screens/tabs_screen.dart';
 import './screens/category_screen.dart';
 
-Future<void> main() async {
-  runApp(MyApp());
+void main() => runApp(MyApp());
+
+class MyApp extends StatefulWidget {
+
+  @override
+  State<MyApp> createState() => _MyAppState();
 }
-class MyApp extends StatelessWidget {
 
+class _MyAppState extends State<MyApp> {
+  Map<String,bool> _filters ={
+    'gluten':false,
+    'vegan':false,
+    'vegeterian':false,
+    'lactose':false
+  };
 
+  void _setFilters(Map<String,bool> filterData){
+    setState(() {
+      _filters = filterData;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +51,7 @@ class MyApp extends StatelessWidget {
           '/' : (ctx) => TabsScreen(),
           CategoryMealScreen.routeName: (ctx) => CategoryMealScreen(),
         MealDetail.routeName: (ctx) => MealDetail(),
-        FilterScreen.routeName: (ctx) => FilterScreen(),
+        FilterScreen.routeName: (ctx) => FilterScreen(_setFilters),
       },
     );
   }

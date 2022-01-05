@@ -37,7 +37,7 @@ class MainDrawer extends StatelessWidget {
                       ),
                       child: Image.asset('assets/images/nav-bg.jpg',
                           // width: 300,
-                          height: MediaQuery.of(context).size.height * 0.35,
+                          height: MediaQuery.of(context).size.height * 0.30,
                           fit: BoxFit.cover),
                     ),
                   ],
@@ -61,7 +61,7 @@ class MainDrawer extends StatelessWidget {
                   Container(
                     alignment: Alignment.bottomLeft,
                     padding: const EdgeInsets.all(7),
-                    height: MediaQuery.of(context).size.height * 0.32,
+                    height: MediaQuery.of(context).size.height * 0.28,
                     child: const Text(
                       'Welcome User',
                       style: TextStyle(
