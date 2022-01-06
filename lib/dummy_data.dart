@@ -904,10 +904,10 @@ const dummyMeals = [
       'Sprinkle chicken yakitori skewers with sesame seeds. Serve immediately with additional sauce.',
 
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: false,
-    isLactoseFree: true,
+    isGlutenFree: false,
+    isVegan: true,
+    isVegetarian: true,
+    isLactoseFree: false,
   ),
   Meal(
     id: 'm18',
@@ -1134,10 +1134,10 @@ const dummyMeals = [
       'Sprinkle chicken yakitori skewers with sesame seeds. Serve immediately with additional sauce.',
 
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: false,
-    isLactoseFree: true,
+    isGlutenFree: false,
+    isVegan: true,
+    isVegetarian: true,
+    isLactoseFree: false,
   ),
   Meal(
     id: 'm19',
@@ -1456,10 +1456,10 @@ const dummyMeals = [
       'Sprinkle chicken yakitori skewers with sesame seeds. Serve immediately with additional sauce.',
 
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: false,
-    isLactoseFree: true,
+    isGlutenFree: false,
+    isVegan: true,
+    isVegetarian: true,
+    isLactoseFree: false,
   ),
   Meal(
     id: 'm24',
@@ -1504,7 +1504,7 @@ const dummyMeals = [
     ],
     isGlutenFree: true,
     isVegan: false,
-    isVegetarian: false,
+    isVegetarian: true,
     isLactoseFree: true,
   ),
   Meal(
