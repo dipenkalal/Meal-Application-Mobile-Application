@@ -4,6 +4,10 @@ import 'package:mealapp/dummy_data.dart';
 
 class MealDetail extends StatelessWidget {
   static const routeName = '/mealdetail';
+  final Function toggleFavourite;
+  final Function isMealFav;
+
+  MealDetail(this.toggleFavourite,this.isMealFav);
 
 
   Widget buildSectionTitle(BuildContext context, String text) {
@@ -23,7 +27,7 @@ class MealDetail extends StatelessWidget {
             margin: const EdgeInsets.all(10),
             padding: const EdgeInsets.all(10),
             height:350,
-            width: 400,
+            width: 300,
             child: child);
   }
 
@@ -35,9 +39,6 @@ class MealDetail extends StatelessWidget {
     final selectedMeal =
         dummyMeals.firstWhere((mealitem) => mealitem.title == mealtitle);
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text('$mealtitle'),
-      // ),
       body: SingleChildScrollView(
         controller: _scrollController,
         scrollDirection: Axis.vertical,
@@ -131,10 +132,10 @@ class MealDetail extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.of(context).pop(mealtitle);
-        },
-        child: Icon(Icons.delete_rounded,color: Theme.of(context).primaryColorLight,) ,
+        onPressed: () => toggleFavourite(mealtitle),
+        //?Icons.star:Icons.favorite_outline_rounded,
+            //() =>
+        child: Icon(isMealFav(mealtitle)?Icons.favorite:Icons.favorite_outline,),
       ),
     );
   }

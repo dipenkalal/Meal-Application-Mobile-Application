@@ -7,8 +7,8 @@ import 'favourites_screen.dart';
 
 class TabsScreen extends StatefulWidget {
   final List<Meal> favoutireMeals;
-
   TabsScreen(this.favoutireMeals);
+
   @override
   _TabsScreenState createState() => _TabsScreenState();
 }
@@ -55,7 +55,7 @@ class _TabsScreenState extends State<TabsScreen> {
             backgroundColor: Colors.teal,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite_outline_rounded),
+            icon: Icon(Icons.favorite),
             label: 'Favourites',
             backgroundColor: Colors.red,
           ),

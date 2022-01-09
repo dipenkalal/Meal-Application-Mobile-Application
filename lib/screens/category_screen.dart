@@ -15,26 +15,24 @@ class CategoryScreen extends StatelessWidget {
         //         fontWeight: FontWeight.w300),
         //   ),
         // ),
-        body: Container(
-          width: MediaQuery.of(context).size.width,
-          child: GridView(
-            padding: const EdgeInsets.all(18),
-            children: dummyCategory
-                .map((catData) => Card(
-              clipBehavior: Clip.antiAlias,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)
-                  ),
-                  elevation: 10,
-                    child: CategoryItem(
-                        catData.id, catData.title, catData.color)))
-                .toList(),
-              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                    maxCrossAxisExtent: 200,
-                    childAspectRatio: 3 / 2,
-                    mainAxisSpacing: 20,
-                    crossAxisSpacing: 20),
-          ),
-        ));
+        body: GridView(
+              padding: const EdgeInsets.all(18),
+              children: dummyCategory
+                  .map((catData) => Card(
+                clipBehavior: Clip.antiAlias,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15)
+                    ),
+                    elevation: 10,
+                      child: CategoryItem(
+                          catData.id, catData.title, catData.color)))
+                  .toList(),
+                gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                      maxCrossAxisExtent: 200,
+                      childAspectRatio: 3 / 2,
+                      mainAxisSpacing: 20,
+                      crossAxisSpacing: 20),
+            ),
+          );
   }
 }
